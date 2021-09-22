@@ -1,0 +1,41 @@
+.heroElement{
+    height: 50rem;
+    // background-image: url("./hero.jpg");
+    background-image: linear-gradient(to right, rgba($color-black, .8), rgba($color-grey, .3)), url("./Images/heroEl.jpg") ;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__contentBox{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.2rem;
+    }
+
+    &__textBox{
+        width: auto;
+    }
+
+    &__subtext{
+        width: auto;
+    }
+
+    &__btn{
+        margin-top: 1.5rem;
+        height: 4rem;
+        backface-visibility: hidden;
+    }
+
+    &__icon{
+        color: $color-white;
+        font-size: 3rem;
+        padding-top: 1.5rem;
+        animation: animateArrowDown 1.5s infinite ease-in-out; 
+    }
+}

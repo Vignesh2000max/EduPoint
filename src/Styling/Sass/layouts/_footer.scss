@@ -1,0 +1,86 @@
+.footer{
+    height: 20rem;
+    padding: 4.5rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba($color-black, 1);
+
+    &__footerLogo{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-left: 3rem;
+
+        &--logo{
+            width: 8rem;
+        }
+    }
+
+    &__linkWrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding-bottom: 1rem;
+
+            &__links{
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: $color-white;
+                line-height: 4rem;
+                border-top: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+                transition: all .3s ease-in-out;
+
+                &:hover{
+                    border-top: 1px solid $color-main-blue;
+                    border-bottom: 1px solid $color-main-blue; 
+                    line-height: 3rem;
+                    color: $color-pink;
+                }
+            } 
+        }
+    }
+
+    &__socialLinksContainer{
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        
+        &__wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &__links{
+                font-size: 2rem;
+                letter-spacing: 2rem;
+                color: $color-white;
+                padding: 1rem 0rem;
+
+                &:hover{
+                    color: $color-main-blue;
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color-black, 1);
+    color: $color-white;
+    font-size: 1.1rem;
+}

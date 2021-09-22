@@ -1,0 +1,124 @@
+.MentorHome{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfoContainer{
+    height: 100%;
+    width: 40vw;
+    padding: 5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba($color-black, .1);
+
+    &__userImage{
+       height: auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: flex-end;
+       
+       &--image{
+           font-size: 10rem;
+           color: $color-black;
+       }
+
+       &--uimage{
+           height: 10rem;
+           border-radius: 50%;
+       }
+    }
+
+    &__userInfo{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h3{
+            font-size: 2rem;
+            font-weight: 500;
+            color: $color-black;
+        }
+
+        & p{
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: $color-black;
+        }
+    }
+}
+
+.userClasses{
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 1.5rem;
+
+    &__head{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 0rem;
+        border-bottom: 1px solid $color-black;
+
+        & h3{
+            font-size: 2rem;
+            font-weight: 500;
+            color: $color-black;
+            padding: 0rem 1rem;
+        }
+    }
+
+    &__classes{
+        margin-top: 3rem;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none;
+
+        & li{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+            line-height: 3rem;
+        }
+
+        &--Link{
+            text-decoration: none;
+            color: $color-black;
+            text-transform: uppercase;
+
+            &:hover{
+                color: $color-main-blue;
+                text-decoration: underline;
+                text-decoration-color: $color-main-blue;
+            }
+        }
+    }
+}
+
+.editIcon{
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: $color-pink;
+    }
+}

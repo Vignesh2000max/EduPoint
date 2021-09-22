@@ -1,0 +1,166 @@
+.showClassesContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.showClasses{
+    height: 100vh;
+    width: 40vw;
+    background: rgba($color-black, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__head{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid $color-black;
+
+        &--h{
+            font-size: 2rem;
+            color: $color-black;
+            font-weight: 500;
+        }
+
+        &--link{
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 400;
+            padding: .3rem;
+            color: $color-black;
+            border: 1px solid $color-pink;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                color: $color-pink;
+            }
+        }
+    }
+
+    &__classList{
+        width: 100%;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none;
+
+        &--list{
+            width: 100%;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+            line-height: 3rem;
+            transition: all .3s ease-in-out;
+            border-bottom: 2px solid rgba($color-black, .6);
+            border-left: 7px solid rgba($color-black, .6);
+
+            &:hover{
+                color: $color-pink;
+                border-bottom: 2px solid $color-pink;
+                border-left: 7px solid $color-pink;
+            }
+
+            &:active{
+                color: $color-main-blue;
+            }
+        }
+    }
+}
+
+.classDetails{
+    height: 100vh;
+    width: 60vw;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__head{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 4rem;
+        align-items: center;
+        border-bottom: 2px solid $color-pink;
+
+        & h3{
+            font-size: 2rem;
+            color: $color-black;
+            font-weight: 500;
+        }
+    }
+
+    &__Topics{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        & h1{
+            font-size: 2rem;
+            font-weight: 500; 
+            color: $color-black;
+            text-transform: uppercase;
+        }
+    }
+     
+    &__discussion{
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.closediscussion{
+    display: none;
+}
+
+.closeTopics{
+    display: none;
+}
+
+.closeAskQstHead{
+    border: none;
+}
+
+.closeTopicsHead{
+    border: none;
+}
+
+.TopicsHead{
+    border: 2px solid $color-pink;
+    border-bottom: none;
+}
+
+.closeDiscussionHead{
+    border: none;
+}
+
+.DiscussionHead{
+    border: 2px solid $color-pink;
+    border-bottom: none;
+}
+
+.QuestionHead{
+    border: 2px solid $color-pink;
+    border-bottom: none;
+}

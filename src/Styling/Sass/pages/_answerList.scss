@@ -1,0 +1,72 @@
+.answerList{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-white;
+    margin-bottom: 1rem;
+
+    &__votes{
+        width: 5%;
+        padding: 0rem .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & button{
+            border: none;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: $color-black;
+            transition: all .2s ease-in-out;
+            &:disabled{
+                color: rgba($color-black, .5);
+            }
+            &:hover{
+                color: $color-pink;
+            }
+        }
+
+        & p{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+        }
+    }
+
+    &__details{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem 1rem;
+
+        & h3{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $color-black;
+            border-bottom: 1px solid $color-black;
+        }
+
+        & p{
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: $color-black;
+            border-bottom: 1px solid $color-black;
+            align-self: flex-start;
+        }
+
+        & a{
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $color-black;
+            transition: all .2s ease-in-out;
+            &:hover{
+                color: $color-pink;
+            }
+        }
+    }
+}

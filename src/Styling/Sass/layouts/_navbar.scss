@@ -1,0 +1,78 @@
+.header{
+    height: 10rem;
+    background-color: $color-black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 0rem 2rem;
+
+    &__logo{
+        height: 7rem;
+    }
+
+    &__NavList{
+        list-style: none;
+
+        &-NavLink{
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            font-size: 1.5rem;
+            color: #fff;
+            transition: all .3s ease-in;
+
+            &:hover{
+                border-bottom: 1.5px solid #f64c72;
+                border-top: 1.5px solid #f64c72;
+            }
+        }
+    }
+
+    .userinfo{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+            &--userName{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: $color-white;
+                letter-spacing: .1rem;
+            }
+    
+            &--defaultuserImg{
+                font-size: 5rem;
+                color: $color-white;
+                margin: 0rem 1.5rem 0rem 1.5rem;
+            }
+    }
+
+    
+
+    &__btn{
+        margin-right: 2rem;
+        padding: .5rem 1rem;
+        border: 1.5px solid #f64c72;
+        border-radius: 3px;
+        background-color: transparent;
+        transition: all .2s ease-in-out;
+
+        &-link{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #f64c72;
+            transition: all .2s ease-in-out;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        &:hover{
+            border: 1.5px solid #fff;
+        }
+    }
+}

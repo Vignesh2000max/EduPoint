@@ -1,0 +1,57 @@
+.answerDetails{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 1rem;
+
+    &__doc{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0rem 10rem;
+        margin-bottom: 5rem;
+
+        & embed{
+            width: 50rem;
+            height: 60rem;
+        }
+
+        & span{
+            width: 100%;
+            height: 100%;
+            margin-left: 5rem;
+            padding: 2rem 3rem;
+            
+            background: rgba($color-black, .2);
+
+            & p{
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: $color-black;
+                align-items: flex-start;
+            }
+
+            & h3{
+                margin: 1rem;
+                width: auto;
+                font-size: 1.1rem;
+                border-bottom: 1px solid $color-black;
+                font-weight: 400;
+                color: $color-black;
+                align-items: flex-start;
+            }
+        }
+        
+    }
+
+    &__description{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+}

@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+ label{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-white;
+}
+
+ input{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-black;
+    border: none;
+    width: 25rem;
+    background: transparent;
+    border-bottom: 2.5px solid $color-black;
+    padding: .6rem .5rem;
+    transition: all .2s ease-in-out;
+
+    &:focus{
+        border-bottom: 2.5px solid $color-pink;
+        background: rgba($color-white, 1);
+    }
+}
+
+input:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: rgba($color-black, .8);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba($color-black, .8);
+  }
+  
+  ::placeholder {
+    color: rgba($color-black, .8);
+  }

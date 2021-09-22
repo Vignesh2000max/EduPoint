@@ -1,0 +1,119 @@
+.btn{
+    text-decoration: none;
+    border: none;
+    padding: .5rem 1rem;
+    transition: all .3s ease-in-out;
+    backface-visibility: hidden;
+    background-color: rgba($color-black, .1);
+    
+    &--pink{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $color-pink;
+        border: 1px solid $color-pink;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover{
+        padding: .5rem 1rem;
+        background-color: rgba($color-white, .7);
+        color: $color-black;
+    }
+
+    &__sign{
+        margin: 2rem 0rem;
+        border: none;
+        padding: .5rem 1rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $color-white;
+        text-transform: uppercase;
+        background: rgba($color-black, .9);
+        border-radius: 5px;
+        transition: all .3s ease-in;
+
+        &:hover{
+            background: rgba($color-white, .9);
+            border-radius: 0px;
+            border: 1px solid $color-pink;
+            color: $color-pink;
+            font-weight: 500;
+        }
+
+        &--google{
+            margin: 0rem 0rem 1rem 0rem;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: $color-white;
+            text-transform: uppercase;
+            background: rgba($color-black, .9);
+            border-radius: 5px;
+            transition: all .3s ease-in;
+
+            &:hover{
+                background: rgba($color-white, .9);
+                border-radius: 0px;
+                border: 1px solid $color-pink;
+                color: $color-pink;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &--logout{
+        margin: 1rem 0rem;
+        padding: .5rem 1rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: $color-white;
+        text-transform: uppercase;
+        background: rgba($color-black, .9);
+        transition: all .3s ease-in;
+        border: 1px solid $color-pink;
+        border-radius: 3px;
+        margin-left: 1rem;
+
+        &:hover{
+            background: transparent;
+            color: $color-pink;
+            font-weight: 300;
+        }
+    }
+}
+
+.Linkbtn{
+    padding: .5rem 1rem;
+    border: 1px solid $color-pink;
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: $color-pink;
+    }
+}
+
+.LinkBtn{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-black;
+    background: transparent;
+    border: 1px solid $color-pink;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: $color-pink;
+    }
+}

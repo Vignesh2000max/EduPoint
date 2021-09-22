@@ -1,0 +1,23 @@
+.StudentHome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba($color-black, .1);
+     
+    & h1{
+        font-size: 3rem;
+        font-weight: 500;
+        color: $color-main-blue;
+        padding-left: 3rem;
+    }
+}
+
+.courseList{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: $color-white;
+}

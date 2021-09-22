@@ -1,0 +1,83 @@
+.question{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0rem;
+
+    &__head{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 2px solid $color-black;
+        margin-bottom: 1rem;
+        &--h1{
+            font-size: 3rem;
+            font-weight: 500;
+            color: $color-black;
+        }
+
+        & span{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $color-black;
+        }
+    }
+
+    &__description{
+        width: 100%;
+        display: flex;
+        padding: 2rem 10rem;
+        justify-content: center;
+        background: rgba($color-black, .1);
+        margin-bottom: 1rem;
+        & p{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $color-black;
+        }
+    }
+
+    &__Image{
+        width: 70rem;
+        height: 50rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.answers{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 15rem;
+    background: rgba($color-black, .1);
+
+    & h1{
+        font-size: 3rem;
+        font-weight: 500;
+        color: $color-black;
+    }
+}
+
+.postAnswer{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 15rem;
+
+    & h1{
+        font-size: 3rem;
+        font-weight: 500;
+        color: $color-black;
+    }
+}

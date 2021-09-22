@@ -1,0 +1,57 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+.headingPrimary{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    font-weight: 500;
+    color: $color-white;
+}
+
+.headingSecondary{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: $color-white;
+}
+
+.subheading{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $color-white;
+    font-weight: 300;
+
+    &--1{
+        font-size: 1.5rem;
+        color: $color-white;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+
+.color-black{
+    color: $color-black;
+}
+
+.fieldError{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.loginLink{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $color-white;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        color: $color-pink;
+        border-bottom: 1px solid $color-pink;
+    }
+}

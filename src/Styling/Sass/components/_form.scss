@@ -1,0 +1,81 @@
+.radio{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0rem;
+    justify-content: space-between;
+}
+
+.form{
+    width: 50%;
+    margin-top: 3rem;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-black;
+
+    & span{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0rem;
+
+        & label{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+        }
+
+        & input {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+            border-bottom: 2px solid $color-black;
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                border-bottom: 2px solid $color-pink;
+            }
+
+            &:focus{
+                border-bottom: 2px solid $color-pink;
+            }
+        }
+
+        & textarea{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $color-black;
+            border-bottom: 2px solid $color-black;
+            transition: all .3s ease-in-out;
+            outline: none;
+            &:hover{
+                border-bottom: 2px solid $color-pink;
+            }
+
+            &:focus{
+                border-bottom: 2px solid $color-pink;
+            }
+        }
+    }
+
+    & button{
+        padding: 1rem 1.5rem;
+        width: 100%;
+        border: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $color-black;
+        background: transparent;
+        border: 1px solid $color-pink;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            color: $color-pink;
+        }
+    }
+}
